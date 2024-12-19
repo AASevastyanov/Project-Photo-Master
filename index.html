@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Съемка профессионального фотографа - Ирины Степановы</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+          <nav class="header__nav">
+            <div class="logo">
+                <a class="logo__link" href="#" alt="Логотип">Ирина Степанова | Фотограф</a>
+            </div>
+            <div class="header__links">
+              <a href="#about" class="header__link">Обо мне</a>
+              <a href="#galary" class="header__link">Портфолио</a>
+              <a href="#contacts" class="header__link">Контакты</a>
+            </div>
+          </nav>
+        </header>
+        <main class="content">
+          <div class="main-section">
+            <div class="main-section__square">
+                <h1 class="main-section__title roboto-bold">Профессиональная фотосессия в Москве</h1>
+                <h2 class="main-section__subtitle roboto-bold">Помогу запечатлеть важные моменты вашей жизни</h2>
+                <button class="main-section__button">Записаться на съёмку</button>
+            </div>
+          </div>
+            <div class="about" id='about'>
+              <img class="about__photo" src="images/Photo-master.jpg" alt="Фото фотографа">
+              <div class="about__info">
+                <h3 class="about__title roboto-bold">Обо мне</h3>
+                <p class="about__text">Меня зовут Ирина Степанова. Я профессиональный фотограф с опытом работы более 5 лет. Снимаю свадьбы, семейные фотосессии и портреты.</p>
+              </div>
+            </div>
+            <section class="galary" id='galary'>
+              <h4 class="galary__title roboto-bold">Примеры моих работ</h4>
+              <div class="galary__grid">
+                  <img class="galary__picture" src="images/street__photo1.jpg" alt="Пример фотосессии" width="400" height="500">
+                  <img class="galary__picture" src="images/photosessia1.jpg" alt="Пример фотосессии" width="500">
+                  <img class="galary__picture" src="images/street__photo2.jpg" alt="Пример фотосессии" width="400" height="500">
+                  <img class="galary__picture" src="images/photosessia2.jpg" alt="Пример фотосессии" width="500">
+                  <img class="galary__picture" src="images/street__photo3.jpg" alt="Пример фотосессии" width="400" height="500">
+                  <img class="galary__picture" src="images/photosessia3.jpg" alt="Пример фотосессии" width="500">
+              </div>
+            </section>
+            <section class="contacts" id='contacts'>
+              <div class="contacts__back">
+                <h3 class="contacts__title roboto-bold">Связаться со мной</h3>
+                <p class="contacts__subtitle">Оставьте заявку или напишите мне в мессенджеры</p>
+                  <form class="call-back" autocomplete="off">
+                    <div class="call-back__form">
+                      <input class="call-back__input" type="text" name="name" id="name" placeholder=" ">
+                      <label for="name" class="call-back__label">Имя</label>
+                    </div>
+                    <div class="call-back__form">
+                      <input class="call-back__input" type="email" name="email" id="email" placeholder=" ">
+                      <label for="email" class="call-back__label">Почта</label>
+                    </div>
+                    <div class="call-back__form">
+                      <input class="call-back__input" type="text" name="massage" id="massage" placeholder=" ">
+                      <label for="massage" class="call-back__label">Сообщение</label>
+                    </div>
+                    <button class="call-back__button" type="submit" value="Отправить">Отправить</button>
+                  </form>
+              </div>
+              <div class="contacts__links">
+                  <p class="contacts__links-title">Мои соцсети:</p>
+                  <a class="contacts__link" href="instagram.com"><img src="images/inst-icon.png" width="40" alt="Иконка инстаграм">Инстаграм</a>
+                  <a class="contacts__link" href="VK.com"><img src="images/vk-icon.png" width="40" alt="Иконка ВКонтакте">ВКонтакте</a>
+              </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__box">
+              <p class="footer__text">&copy; 2024 Ирина Степанова. Все права защищены.</p>
+              <a href="#">Политика конфиденциальности</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
