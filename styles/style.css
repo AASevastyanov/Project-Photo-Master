@@ -1,3 +1,5 @@
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -277,4 +279,102 @@ html {
 
 .footer {
   margin: 100px 80px 0;
+}
+
+/* ----------media----------- */
+
+/* Адаптация для телефонов */
+@media (max-width: 480px) {
+
+  /* Общие настройки для текста */
+  body {
+    font-size: 14px; /* Уменьшаем базовый размер шрифта */
+    line-height: 1.5; /* Увеличиваем читаемость текста */
+    padding: 10px; /* Отступы по краям */
+  }
+
+  /* Шапка */
+  .header {
+    flex-direction: column; /* Делаем блоки в одну колонку */
+    align-items: center; /* Центрируем содержимое */
+    padding: 15px;
+  }
+
+  .header__logo {
+    margin-bottom: 10px; /* Отступ под логотипом */
+  }
+
+  .header__links {
+    flex-direction: column; /* Ссылки идут в колонку */
+    gap: 10px; /* Отступы между ссылками */
+  }
+
+  .header__link {
+    font-size: 16px; /* Уменьшаем шрифт ссылок */
+  }
+
+  /* Блок "Обо мне" */
+  .about {
+    flex-direction: column; /* Фото и текст идут в колонку */
+    align-items: center; /* Центрируем содержимое */
+    text-align: center; /* Выравниваем текст по центру */
+    gap: 15px; /* Отступы между элементами */
+  }
+
+  .about__image img {
+    width: 80%; /* Сужаем ширину изображения */
+    height: auto; /* Сохраняем пропорции */
+  }
+
+  .about__content {
+    padding: 0; /* Убираем отступы */
+  }
+
+  /* Галерея */
+  .galary__grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Уменьшаем ширину колонок */
+    gap: 10px; /* Отступы между фотографиями */
+  }
+
+  .galary__picture {
+    width: 100%; /* Картинки занимают всю ширину ячейки */
+    height: 200px; /* Высота фиксирована */
+    object-fit: cover; /* Обрезка для равномерного заполнения */
+  }
+
+  /* Форма обратной связи */
+  .call-back__form {
+    flex-direction: column; /* Поля формы идут в колонку */
+    align-items: stretch; /* Поля растягиваются на всю ширину */
+    gap: 15px; /* Отступы между полями */
+  }
+
+  .call-back__input {
+    font-size: 14px; /* Уменьшаем шрифт */
+    padding: 10px; /* Увеличиваем кликабельность */
+  }
+
+  .call-back__button {
+    font-size: 16px; /* Читаемый шрифт для кнопки */
+    padding: 12px; /* Удобная кнопка для нажатия пальцем */
+  }
+
+  /* Подвал */
+  .footer {
+    text-align: center; /* Центрируем текст */
+    padding: 15px;
+  }
+
+  .footer__columns {
+    flex-direction: column; /* Секции футера идут в колонку */
+    gap: 15px; /* Отступы между колонками */
+  }
+
+  .footer__column-links {
+    gap: 10px; /* Увеличиваем отступы между ссылками */
+  }
+
+  .footer__column-link {
+    font-size: 14px; /* Уменьшаем шрифт */
+  }
 }
